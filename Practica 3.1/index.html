@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+</head>
+<body>
+	<h2>Registro</h2>
+	<form action="#" method="get" autocomplete="on">
+		<label>Token:</label>
+		<input type="text" id="token" readonly>
+		<br>
+		<label>Nombre:</label>
+		<input type="text" placeholder="Ingresa tu nombre:" id="nombre">
+		<br>
+		<label>Apellido Paterno:</label>
+		<input type="text" placeholder="Ingresa tu apellido paterno:" id="apellidoP">
+		<br>
+		<label>Apellido Materno:</label>
+		<input type="text" placeholder="Ingresa tu apellido materno:" id="apellidoM">
+		<br>
+		<label>Fecha:</label>
+		<input type="date" id="fecha">
+		<br>
+		<button type="button" onClick="calcularRFC()">Calcular RFC</button>
+		<input type="hidden" id="rfc">
+	</form>
+	<div id="caja"></div>
+	<script src="js/procesar.js"></script>
+</body>
+</html>
