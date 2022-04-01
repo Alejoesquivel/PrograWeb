@@ -5,12 +5,15 @@ function token(){
 	var min = 32;
 	var max = 128;
 	var tokenFinal = "";
+	var aleatorio, ascii;
 	for (i=0;i<10;i++){
-		var aleatorio = Math.floor(Math.random()*(max-min+1)+min);
-		var ascii = String.fromCharCode(aleatorio);
+		aleatorio = Math.floor(Math.random()*(max-min+1)+min);
+		ascii = String.fromCharCode(aleatorio);
 		tokenFinal += ascii;
 	}
 	document.getElementById("token").value = tokenFinal;
+	var tokenCampo = document.getElementById("token");
+	tokenCampo.type = "text";
 }
 
 function calcularRFC(){
@@ -22,24 +25,24 @@ function calcularRFC(){
 	var apellidoPLength = apellidoPValue.length;
 	var apellidoPVocal = "";
 	var contador = 0;
-	for (j=0;j<apellidoPLength;j++){
-		if(apellidoPValue.charAt(j)=="a" && contador ==0){
+	for (j=1;j<apellidoPLength;j++){
+		if(apellidoPValue.charAt(j)=="a" && contador ==0 || apellidoPValue.charAt(j)=="A" && contador ==0){
 			apellidoPVocal = apellidoPValue.charAt(j);
 			contador++;
 		}
-		if(apellidoPValue.charAt(j)=="e" && contador ==0){
+		if(apellidoPValue.charAt(j)=="e" && contador ==0 || apellidoPValue.charAt(j)=="E" && contador ==0){
 			apellidoPVocal = apellidoPValue.charAt(j);
 			contador++;
 		}
-		if(apellidoPValue.charAt(j)=="i" && contador ==0){
+		if(apellidoPValue.charAt(j)=="i" && contador ==0 || apellidoPValue.charAt(j)=="I" && contador ==0){
 			apellidoPVocal = apellidoPValue.charAt(j);
 			contador++;
 		}
-		if(apellidoPValue.charAt(j)=="o" && contador ==0){
+		if(apellidoPValue.charAt(j)=="o" && contador ==0 || apellidoPValue.charAt(j)=="O" && contador ==0){
 			apellidoPVocal = apellidoPValue.charAt(j);
 			contador++;
 		}
-		if(apellidoPValue.charAt(j)=="u" && contador ==0){
+		if(apellidoPValue.charAt(j)=="u" && contador ==0 || apellidoPValue.charAt(j)=="U" && contador ==0){
 			apellidoPVocal = apellidoPValue.charAt(j);
 			contador++;
 		}
