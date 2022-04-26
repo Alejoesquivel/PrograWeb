@@ -2,3 +2,22 @@
 a {
 	text-decoration: none;
 }
+
+.formulario form{
+	margin: 0 auto;
+	width: 500px;
+	font-size: 23px;
+	border: solid green 3px;
+}
+
+.field{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	width: 500px;
+}
+
+.formulario {
+	padding-top: 100px;
+}

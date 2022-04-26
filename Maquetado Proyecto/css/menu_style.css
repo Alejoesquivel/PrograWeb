@@ -56,8 +56,8 @@ h1 {
 
 .logo img{
 	position: absolute;
-	padding: 10px;
-	left: 0%;
+	padding-top: 3px;
+	left: 0.75%;
 }
 
 .navbar ul{

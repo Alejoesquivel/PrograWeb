@@ -14,23 +14,34 @@
 	<nav class="navbar">
 		<div class="navbar-container">
 			<div class="logo">
-				<img src="#">
+				<img src="img/Adopt_Me.jpg" alt="Imagen de Adopt Me">
 			</div>
-			
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="productos.html">Productos</a></li>
 				<li><a href="citas.html">Agendar Cita</a></li>
 				<li><a href="acerca.html">Acerca De Nosotros</a></li>
 			</ul>
-			
 		</div>
 	</nav>
 	
 	<section>
-	<h1>Hola esto es el desarrollo</h1>
+		<div class="formulario">
+			<form>
+				<label for="nombre">Nombre Completo:</label>
+				<br>
+				<input type="text" id="nombre" placeholder="Ingresa tu nombre" class="field">
+				<br>
+				<label for="opciones">Ingresa lo que deseas hacer:</label>
+				<br>
+				<input type="radio" id="adoptar" name="opciones" value="adoptar">
+				<label for="adoptar">Adoptar una Mascota</label>
+				<br>
+				<input type="radio" id="consulta" name="opciones" value="consulta">
+				<label for="consulta">Agendar una consulta para mi Mascota</label>
+			</form>
+		</div>
 	</section>
-	
 	<footer>
 	<h1>Pie de página</h1>
 	</footer>	
