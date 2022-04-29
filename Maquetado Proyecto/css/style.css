@@ -20,7 +20,7 @@ body {
 	padding-bottom: 5px;
 	padding-left: 3px;
 	padding-right: 3px;
-	width: 480px;
+	width: 350px;
 }
 
 .contenedor {
@@ -35,6 +35,11 @@ body {
 	margin-top: 150px;
 	display:flex;
 	justify-content: center;
+}
+
+.contenedor img {
+	width: 50%;
+	height: 70%;
 }
 
 .contenedor_acerca {
@@ -62,4 +67,10 @@ body {
 
 .formulario_escondido {
 	display:none;
+}
+.botones {
+	font-family: 'Roboto Condensed', helvetica, sans-serif;
+	font-size: 15px;
+	background-color:#D9EAF8;
+	border: 3px solid rgba(185, 185, 185, 0.5);
 }
