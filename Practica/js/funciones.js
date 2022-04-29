@@ -52,5 +52,7 @@ $(document).ready(function(){
 		$("#costo").val(costodesc);
 	}
 	});
+	
 });
+
 
