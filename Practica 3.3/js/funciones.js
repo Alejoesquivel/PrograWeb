@@ -4,6 +4,7 @@ var costofinal = 0;
 var costotipo = 0;
 var contador = 0;
 var costodesc = "";
+
 function Agregar(){
 	let numerotaller;
 	numerotaller = $("#talleres").val();
@@ -22,7 +23,6 @@ function Agregar(){
 		contador++;
 	}
 	$("#carrito").val(carrito);
-	$("#costo").get(0).type = "text";
 	$("#costo").val(costofinal);
 }
 
