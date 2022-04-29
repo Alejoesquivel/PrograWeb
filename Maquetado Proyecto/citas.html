@@ -28,25 +28,27 @@
 	
 	<section>
 		<div class="contenedor">
+			<img src="img/Formulario.jpg">
 			<div class="formulario">
 				<label for="nombre">Nombre Completo:</label>
-					<br>
-					<input type="text" id="nombre" placeholder="Ingresa tu nombre" class="field">
-					<br>
+				<br>
+				<input type="text" id="nombre" placeholder="Ingresa tu nombre" class="field">
+				<br>
 				<label for="opciones">Ingresa lo que deseas hacer:</label>
-					<br>
-					<input type="radio" id="adoptar" name="opciones" value="adoptar">
+				<br>
+				<input type="radio" id="adoptar" name="opciones" value="adoptar">
 				<label for="adoptar">Adoptar una Mascota</label>
-					<br>
-					<input type="radio" id="consulta" name="opciones" value="consulta">
+				<br>
+				<input type="radio" id="consulta" name="opciones" value="consulta">
 				<label for="consulta">Agendar una consulta para mi Mascota</label>
 					<form name="form_adopcion" class="formulario_escondido" id="form_adopcion">
-						<label for="fecha">Selecciona una fecha para ir a la sucursal</label>
+						<label for="fecha">Selecciona una fecha para ir a la sucursal:</label>
 						<input type="date" id="fecha">
 					</form>
 					<form name="form_consulta" class="formulario_escondido" id="form_consulta">
-						<label for="razon">Ingresa la razón de la consulta</label>
-						<input type="text" id="razon">
+						<label for="razon">Ingresa la razón de la consulta:</label>
+						<br>
+						<input type="text" id="razon" placeholder="Ingresa la razón" class="field">
 					</form>
 			</div>
 		</div>

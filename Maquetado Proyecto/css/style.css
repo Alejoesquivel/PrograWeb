@@ -4,18 +4,15 @@ a {
 }
 
 body {
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/backgroundopaco.jpg");
 	bakcground-repeat:no-repeat;
 	background-size:100%;
 	background-attachment: fixed;
 }
 
 .formulario{
-	margin: 0 auto;
-	width: 500px;
 	font-size: 23px;
-	border: 3px solid rgba(185, 185, 185, 0.5);
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin-left: 20px;
 }
 
 .field{
@@ -23,11 +20,44 @@ body {
 	padding-bottom: 5px;
 	padding-left: 3px;
 	padding-right: 3px;
-	width: 494px;
+	width: 480px;
 }
 
 .contenedor {
-	padding-top: 100px;
+	margin: 0 auto;
+	width: 800px;
+	font-size: 23px;
+	border: 3px solid rgba(185, 185, 185, 0.5);
+	background-color: aliceblue;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding: 10px;
+	border-radius: 25px;
+	margin-top: 150px;
+	display:flex;
+	justify-content: center;
+}
+
+.contenedor_acerca {
+	margin: 0 auto;
+	width: 1000px;
+	font-size: 23px;
+	border: 3px solid rgba(185, 185, 185, 0.5);
+	background-color: aliceblue;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding: 10px;
+	border-radius: 25px;
+	margin-top: 150px;
+	display:flex;
+	justify-content: center;
+}
+
+.contenedor_acerca img {
+	width: 50%;
+	height: 60%;
+}
+
+.acerca {
+	margin-left: 20px;
 }
 
 .formulario_escondido {
