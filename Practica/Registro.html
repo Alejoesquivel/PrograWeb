@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Practica</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/funciones.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form method="get" action="confirmacion.html">
+	<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" id="nombre" required>
+		<br>
+	<label for="tipo">Tipo:</label>
+		<br>
+		<input type="radio" name="tipo" id="profesional" value="profesional">
+		<label for="profesional">Profesional</label>
+		<br>
+		<input type="radio" name="tipo" id="estudiante" value="estudiante" checked>
+		<label for="estudiante">Estudiante</label>
+		<br>
+		<input type="radio" name="tipo" id="profesor" value="profesor">
+		<label for="profesor">Profesor</label>
+		<br>
+		<input type="text" id="precio" readonly>
+		<br>
+		<label for="talleres">Talleres:</label>
+		<br>
+		<select name="talleres" id="talleres">
+     		<option value="1">Python $100</option>
+     		<option value="2">Flutter $120</option>
+     		<option value="3">MongoDB $80</option>
+   		</select>
+		<br>
+		<button type="button" onClick="Agregar()">Agregar</button>
+		<br>
+		<label>Carrito:</label>
+		<br>
+		<textarea id="carrito" readonly></textarea>
+		<br>
+		<label for="Descuento">Codigo Descuento:</label>
+		<input type="text" id="descuento">
+		<br>
+		<label>Total a pagar:</label>
+		<textarea id="costo" class="costo" readonly></textarea>
+		<br>
+		<button type="submit">Pagar</button>
+		<button type="button">Limpiar</button>
+	</form>
+</body>
+</html>
