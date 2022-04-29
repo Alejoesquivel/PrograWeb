@@ -11,12 +11,15 @@ function Agregar(){
 	if(numerotaller == 1){
 		carrito = carrito + "Python $100 \n";
 		costofinal = costofinal + 100;
+		$("#talleres option[value='1']").hide();
 	} else if (numerotaller == 2){
-		carrito = carrito + "flutter $120 \n";
+		carrito = carrito + "Flutter $120 \n";
 		costofinal = costofinal + 120;
+		$("#talleres option[value='2']").hide();
 	} else if (numerotaller == 3) {
-		carrito = carrito + "mongodb $80 \n";
+		carrito = carrito + "MongoDB $80 \n";
 		costofinal = costofinal + 80;
+		$("#talleres option[value='3']").hide();
 	}
 	if (contador == 0){
 		costofinal = costofinal + costotipo;
@@ -53,6 +56,17 @@ $(document).ready(function(){
 	}
 	});
 	
+	$("#limpiar").click(function(){
+	carrito = "";
+	costofinal = 0;
+	costotipo = 0;
+	contador = 0;
+	costodesc = "";
+	$("#talleres option[value='1']").show();
+	$("#talleres option[value='2']").show();
+	$("#talleres option[value='3']").show();
+	$("#costo").removeClass("desc");
+	});
 });
 
 
