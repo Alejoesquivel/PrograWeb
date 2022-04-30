@@ -4,7 +4,7 @@ a {
 }
 
 body {
-	background-image: url("../img/backgroundopaco.jpg");
+	background-image: url("../img/backgroundfinal.jpg");
 	bakcground-repeat:no-repeat;
 	background-size:100%;
 	background-attachment: fixed;
@@ -32,7 +32,7 @@ body {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	padding: 10px;
 	border-radius: 25px;
-	margin-top: 150px;
+	margin-top:150px;
 	display:flex;
 	justify-content: center;
 }
