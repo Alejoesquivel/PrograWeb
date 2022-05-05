@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Boostrap</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
+</head>
+<body>
+   <header id="encabezado" class="container bg-dark text-light pt-5 border">
+       <h1 class="text-center">Ejemplo de <small>Bootstrap</small></h1>
+   </header>
+    <main id="contenido">
+        <form action="" class="container-fluid m-10">
+            <fieldset class="row align-items-center">
+               <div class="col-8 bg-success">
+                    <legend class="display1 text-end text-danger bg-secondary">Tipo de inscripcion</legend>
+                    <!-- (label+input[name='tipo']+br)*3 -->
+                    <label for="tipo">Estudiante:</label>
+                    <input type="radio" name="tipo" id="estudiante" value="100" checked>
+                    <br>
+                    <label for="tipo">Profesor:</label>
+                    <input type="radio" name="tipo" id="profesor" value="150">
+                    <br>
+                    <label for="tipo">Público en general:</label>
+                    <input type="radio" name="tipo" id="publico" value="200">
+                    <br>
+                </div>
+                <div class="col-4 bg-info ">
+                    <label for="costo">Costo</label><input type="text" readonly="" name="costo" id="costo">
+                </div>
+            </fieldset>
+            <a href="conferencias.html" class="btn btn-warning">Ver conferencias</a>
+            <fieldset>
+               <legend>Talleres:</legend>
+                <select name="taller" id="taller">
+                    <option value="100">Python $100</option>
+                    <option value="80" selected>HTML $80</option>
+                    <option value="150">PHP $150</option>
+                </select>
+                <input type="button" value="Agregar" id="agregar" class="btn btn-lg btn-light">
+                <textarea name="carrito" id="carrito" cols="30" rows="10" readonly></textarea>
+                <table class="table">
+                    <theader>
+                        <tr>
+                            <th>Taller</th>
+                            <th>Costo</th>
+                        </tr>
+                    </theader>
+                    <tbody id="tabla">
+                        
+                    </tbody>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Descuento</legend>
+                <label for="descuento">Código</label>
+                <input type="text" id="descuento" name="descuento">
+                <button type="button" class="btn btn-sm btn-primary">Botón</button>
+            </fieldset>
+            
+        </form>
+    </main>
+</body>
+</html>
